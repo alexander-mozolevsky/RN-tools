@@ -13,7 +13,9 @@ export default () => {
       {Object.keys(packages.dependencies)
         ?.filter(key => Object.values(ROUTES).includes(key))
         .map(v => (
-          <Button onPress={() => navigate(v)}>{v}</Button>
+          <Button key={v} onPress={() => navigate(v)}>
+            {v}
+          </Button>
         ))}
     </View>
   );
