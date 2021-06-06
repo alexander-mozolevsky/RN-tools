@@ -16,14 +16,14 @@ const Spacing = {
   xl: 40,
 };
 
-const FontSize = {
+export const FontSize = {
   normal: 14,
   large: 18,
 };
 
 type FontWeights = 'thin' | 'normal' | 'bold';
 
-const FontWeight: Record<FontWeights, TextStyle['fontWeight']> = {
+export const FontWeight: Record<FontWeights, TextStyle['fontWeight']> = {
   thin: '200',
   normal: 'normal',
   bold: 'bold',
@@ -49,6 +49,7 @@ export const theme = {
     background: Palette.ivony,
     primary: Palette.flame,
     secondary: Palette.olivine,
+    accent: Palette.laserLemon,
   },
   spacing: Spacing,
   styles: Styles,
